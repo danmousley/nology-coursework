@@ -1,0 +1,74 @@
+* {
+    background-color: lightgray;
+}
+
+.ger {
+    height: 25px;
+    width: 200px;
+    padding: 20px;
+    margin: 0;
+}
+
+#flag1:hover #flag-top {
+    background-color: red;
+}
+
+#flag1:hover #flag-middle {
+    background-color: white;
+}
+
+#flag1:hover #flag-bottom {
+    background-color: green;
+}
+
+#flag1 {
+    position:relative;
+    left: 35%;
+}
+
+#flag-top {
+    background-color: black;
+}
+
+#flag-middle {
+    background-color: red;
+}
+
+#flag-bottom {
+    background-color: yellow;
+}
+
+.fra {
+    height: 150px;
+    width: 50px;
+    padding: 20px;
+    margin: 0;
+    display: inline-block;
+}
+
+#flag2 {
+    position:relative;
+    left: 33%;
+    top: 20px;
+    font-size: 0;
+}
+
+#flag2:active #fra-left {
+    background-color:green;
+}
+
+#flag2:active #fra-right {
+    background-color:orangered;
+}
+
+#fra-left {
+    background-color: blue;
+}
+
+#fra-middle {
+    background-color: white;
+}
+
+#fra-right {
+    background-color: red;
+}
