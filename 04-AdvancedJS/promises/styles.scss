@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
+
+#beerCard {
+    font-family: 'Roboto Mono', sans-serif;
+    color: #d4ccce;
+    background-color: #f46f04;
+    width: 30vw;
+    height: auto;
+    border: 10px solid #7c3f04;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.beer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
