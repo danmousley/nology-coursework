@@ -1,0 +1,32 @@
+.small {
+    border: black solid 2px;
+    margin: 0;
+    padding-left: 15px;
+}
+
+#big {
+    width: 25%;
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 67.5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 25px auto;
+    height: 450px;
+}
+
+li {
+    margin: 3px;
+}

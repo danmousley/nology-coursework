@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet" />
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Poppins";
+      }
+      * {
+        font-family: "Lato";
+      }
+      .valid {
+        border: 1px solid green;
+      }
+      .invalid {
+        border: 1px solid red;
+      }
+      .active {
+          background-color: lightseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Welcome/Title -->
+      <section id="welcome">
+        <h1 id="welcome-title">Welcome to Nology Conference!</h1>
+        <p>Amazing talks from amazing people.</p>
+      </section>
+
+      <!-- Register your interest -->
+      <section id="contact">
+        <h3>Register your interest!</h3>
+        <form id="form">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input class="form-input" id="name-input" onchange="handleInputChange(event)" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input class="form-input" />
+          </div>
+          <button type="submit">Send</button>
+        </form>
+        <form id="summary-form" onsubmit="addHTML(event)">
+            <input type="text" id="notes">
+            <button type="submit">Add notes</button>
+        </form>
+        <ul id="summary"></ul>
+      </section>
+    </main>
+
+    <!-- Script -->
+    <script defer>
+      // 1. Change the welcome innerHTML to 'Welcome to Nology Conference 2021!'
+      document.getElementById('welcome-title').innerHTML = "Welcome to Nology Conference 2021!"
+
+      // 2. Add an 'active' class to first form-input
+      document.getElementById('name-input').classList.add("active")
+
+      // 3. Create a handleRegister function to run when the form is submitted, a simple pop please.
+      document.getElementById("form").onsubmit = () => {
+          return alert("Form submitted!")
+      }
+
+      const handleInputChange = (event) => {
+          if (event.target.value.length > 0) {
+              event.target.class = "valid"
+          } else {
+            event.target.class = "invalid"
+          }
+      }
+
+      // 4. Create a handleInputChange function to validate the input
+         // Can you add the class 'valid' if it has a value?​
+         // Can you  add the 'invalid' class if it does not?
+
+      // EXTENSION Dynamically add a ul/li list beneath the form with the summary points of conference
+
+      const addHTML = (event) => {
+          event.preventDefault()
+        let summary = document.getElementById("summary")
+        let notes = document.getElementById('notes').value
+        summary.innerHTML += `<li>${notes}</li>`
+      }
+    </script>
+  </body>
+</html>

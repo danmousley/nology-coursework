@@ -1,0 +1,90 @@
+.button {
+    background-color: $button-color;
+    color: white;
+    border-radius: 5px;
+    border-color: $button-color;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    border: none;
+    display: block;
+
+    &--form {
+        width: 100%;
+        background-color: $color-light;
+        margin: 0 auto;
+    }
+
+    &--logout {
+        background-color: $background-color;
+        padding: 10px;
+        margin: 5px;
+        border: black 1px solid;
+        color: black;
+    }
+
+}
+
+.wave {
+    background-color: $background-color;
+    vertical-align: top;
+}
+
+.wave2 {
+    background-color: $nav-color;
+    vertical-align: top;
+}
+
+.navigation {
+    background-color: $nav-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.mysite {
+    font-family: $logo-font;
+    color: $logo-color;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.copyright {
+    color: white;
+    padding: 10px;
+}
+
+.intro {
+    text-align: center;
+
+    &__heading {
+        text-align: center;
+        font-size: 50px;
+        color: $nav-color;
+    }
+
+    &__subheading {
+        font-size: 25px;
+    }
+}
+
+
+
+#welcome {
+    font-family: $welcome-font;
+    font-weight: bold;
+}
+
+.form {
+    background-color: $background-color;
+    padding: 20px;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+        margin-bottom: 20px;
+    }
+}

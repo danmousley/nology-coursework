@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass and BEM</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navigation">
+        <div class="mysite">My Site</div>
+        <div id="login">
+            <button class="button">login</button>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="intro">
+            <h1 class="intro__heading">Hello</h1>
+            <div class="intro__subheading" id="welcome">
+                Welcome to my website
+            </div>
+            <button class="button">Scroll</button>
+        </div>
+    </header>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(49, 49, 194)" fill-opacity="1" d="M0,64L60,58.7C120,53,240,43,360,53.3C480,64,600,96,720,138.7C840,181,960,235,1080,229.3C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    <main class="main">
+        <form action="" class="form">
+            <label for="name" class="form__label">Name:</label>
+            <input type="text" name="name" class="form__input" />
+            <label for="email" class="form__label">Email:</label>
+            <input type="email" name="email" class="form__input" />
+            <button class="button button--form">Send</button>
+        </form>
+    </main>
+    <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(238, 225, 225)" fill-opacity="1" d="M0,64L60,58.7C120,53,240,43,360,53.3C480,64,600,96,720,138.7C840,181,960,235,1080,229.3C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    <footer class="header">
+        <div class="intro__subheading" id="welcome">
+            Thanks for visiting
+        </div>
+        <div>
+            <button class="button button--logout">Logout</button>
+        </div>
+    </footer>
+    <nav class="navigation">
+        <span class="mysite">My Site</span>
+        <span class="copyright">Copyright</span>
+        <span class="copyright">2021</span>
+    </nav>
+  </body>

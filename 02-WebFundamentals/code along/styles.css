@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #f0a500;
+  color: white;
+  border-radius: 5px;
+  border-color: #f0a500;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  border: none;
+  display: block;
+}
+.button--form {
+  width: 100%;
+  background-color: #55a5f0;
+  margin: 0 auto;
+}
+.button--logout {
+  background-color: #eee1e1;
+  padding: 10px;
+  margin: 5px;
+  border: black 1px solid;
+  color: black;
+}
+
+.wave {
+  background-color: #eee1e1;
+  vertical-align: top;
+}
+
+.wave2 {
+  background-color: #3131c2;
+  vertical-align: top;
+}
+
+.navigation {
+  background-color: #3131c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.mysite {
+  font-family: "Dancing Script", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.copyright {
+  color: white;
+  padding: 10px;
+}
+
+.intro {
+  text-align: center;
+}
+.intro__heading {
+  text-align: center;
+  font-size: 50px;
+  color: #3131c2;
+}
+.intro__subheading {
+  font-size: 25px;
+}
+
+#welcome {
+  font-family: "Dancing Script", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.form {
+  background-color: #eee1e1;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: #eee1e1;
+}
+
+.main {
+  height: 50vh;
+  background-color: #3131c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #eee1e1;
+}
