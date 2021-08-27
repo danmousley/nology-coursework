@@ -6,10 +6,12 @@ const TicketCounter = () => {
 
     return (
         <div className={styles.counterContainer}>
-            <h5>Counter</h5>
-            <span>{ counter }</span><br></br>
-            <button onClick={() => updateCounter(counter+1)}>+</button>
-            <button onClick={() => updateCounter(counter-1)}>-</button>
+            <h6 className={styles.counterTitle}>Tickets Completed:</h6>
+            <section className={styles.buttons}>
+                <button className={styles.button} onClick={() => updateCounter(counter+1)}>+</button>
+                <span className={styles.counterValue}>{ counter }</span>
+                <button className={styles.button} onClick={() => updateCounter(counter-1)}>-</button>
+            </section>
         </div>
     )
 }

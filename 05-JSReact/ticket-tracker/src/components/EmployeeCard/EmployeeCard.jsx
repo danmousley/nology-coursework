@@ -11,8 +11,8 @@ const EmployeeCard = (props) => {
 
     return (
         <div className={styles.card}>
-            <h3>{name}</h3>
-            <h5>{role}</h5>
+            <h3 className={styles.employeeName}>{name}</h3>
+            <h5 className={styles.employeeRole}>{role}</h5>
             <TicketCounter />
         </div>
     )

@@ -6,8 +6,11 @@ import EmployeeCard from './components/EmployeeCard';
 
 const App = () => {
   return (
-    <div>
-      {team.map((employee) => < EmployeeCard employee={employee} key={employee.id} />)}
+    <div className={styles.background}>
+      <h1 className={styles.title}>Ticket Tracker</h1>
+      <section className={styles.cards}>
+        {team.map((employee) => < EmployeeCard employee={employee} key={employee.id} />)}
+      </section>
     </div>
   );
 }
